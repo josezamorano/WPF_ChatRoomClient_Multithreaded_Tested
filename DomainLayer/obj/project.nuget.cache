@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ax37QxE67DFA1TI8LxorRWZo1Zvzb6QcNX9ZBJGKpcMg3Y3nepST+OXZbqeIwpGS+V9ZQRp9VUp0wQHjk14rjQ==",
+  "dgSpecHash": "soHdyRpiSFk5hvSSdCQD6zXMBvmLdqwbv4L5AR5dp9Z5+0uazU7YRdia8bhkZx9rBp/yLNQBGmnyhfb6nwXdCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_ChatRoomClient\\17-ChatRoomClientSolution_Test\\DomainLayer\\DomainLayer.csproj",
+  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_ChatRoomClient\\19-ChatRoomClientSolution_DemoUpload\\DomainLayer\\DomainLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

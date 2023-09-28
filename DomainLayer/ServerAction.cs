@@ -3,6 +3,7 @@ using DomainLayer.Utils.Interfaces;
 using ServiceLayer;
 using ServiceLayer.Constants;
 using ServiceLayer.Enumerations;
+using ServiceLayer.Messages;
 using ServiceLayer.Models;
 using System;
 using System.Net.Sockets;
@@ -33,7 +34,7 @@ namespace DomainLayer
         public void ExecuteCommunicationSendMessageToServer(Payload payload, ServerCommunicationInfo serverCommunicationInfo)
         {
             string messageSent = ResolveCommunicationToServer(payload);
-            if (messageSent.Contains(Notification.Exception))
+            if (messageSent.Contains(NotificationMessage.Exception))
             {
                 serverCommunicationInfo.LogReportCallback(messageSent);
                 ExecuteDisconnectFromServer(serverCommunicationInfo);
@@ -63,7 +64,7 @@ namespace DomainLayer
             catch (Exception ex)
             {
                 serverCommunicationInfo.ConnectionReportCallback(_ClientIsActive);
-                string log = CustomConstants.CRLF + Notification.Exception + "Problem disconnecting from the server..." + CustomConstants.CRLF + ex.ToString();
+                string log = CustomConstants.CRLF + NotificationMessage.Exception + "Problem disconnecting from the server..." + CustomConstants.CRLF + ex.ToString();
                 serverCommunicationInfo.LogReportCallback(log);
             }
         }
@@ -75,9 +76,9 @@ namespace DomainLayer
                 bool messageIsInvalid = VerifyIfMessageIsNullOrContainsException(messageReceived, serverCommunicationInfo, serverActionReportCallback);
                 if (messageIsInvalid) { return; }
 
-                if (messageReceived.Contains(Notification.ServerPayload))
+                if (messageReceived.Contains(NotificationMessage.ServerPayload))
                 {
-                    string serializedPayload = messageReceived.Replace(Notification.ServerPayload, "");
+                    string serializedPayload = messageReceived.Replace(NotificationMessage.ServerPayload, "");
                     Payload payload = _serializationProvider.DeserializeObject<Payload>(serializedPayload);
                     serverActionReportCallback(payload);
                 }
@@ -91,7 +92,7 @@ namespace DomainLayer
         #region Private Methods
         private bool VerifyIfMessageIsNullOrContainsException(string message, ServerCommunicationInfo serverCommunicationInfo, ServerActionReportDelegate serverActionReportCallback)
         {
-            if (string.IsNullOrEmpty(message) || message.Contains(Notification.Exception))
+            if (string.IsNullOrEmpty(message) || message.Contains(NotificationMessage.Exception))
             {
                 serverCommunicationInfo.LogReportCallback(message);
                 Payload exceptionPayload = new Payload();

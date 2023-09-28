@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-ChatRoomClientSolution_Test\PresentationLayer\obj\Debug\net7.0-windows\
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\PresentationLayer\obj\Debug\net7.0-windows\
 PresentationLayer
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-ChatRoomClientSolution_Test\PresentationLayer\App.xaml
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\PresentationLayer\App.xaml
 181837597041
 
 40-2131626383
-248-1608883387
+248-603003536
 CustomUserControls\AllInvitesListView.xaml;CustomUserControls\AllItemsListBox.xaml;CustomUserControls\AllItemsListView.xaml;CustomUserControls\ChatRoomNameCreator.xaml;CustomUserControls\HeaderMenuBar.xaml;MVVM\Views\AllChatRoomsView.xaml;MVVM\Views\ConnectionView.xaml;MVVM\Views\Contactview.xaml;MVVM\Views\CreateChatRoomView.xaml;MVVM\Views\InvitationView.xaml;MVVM\Views\MainWindowView.xaml;MVVM\Views\SingleChatRoomView.xaml;Styles\ButtonStyles.xaml;Styles\ListViewItemStyles.xaml;Styles\ScrollBarStyles.xaml;Styles\TextBlockStyles.xaml;Styles\TextBoxStyles.xaml;Styles\UIColors.xaml;
 
 False

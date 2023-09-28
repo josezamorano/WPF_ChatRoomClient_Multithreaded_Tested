@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UnitTestChatRoomClient
-build_property.ProjectDir = C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-ChatRoomClientSolution_Test\UnitTestChatRoomClient\
+build_property.ProjectDir = C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\UnitTestChatRoomClient\

@@ -2,6 +2,7 @@
 using DomainLayer.Utils.Interfaces;
 using ServiceLayer;
 using ServiceLayer.Constants;
+using ServiceLayer.Messages;
 using System;
 using System.IO;
 using System.Net.Sockets;
@@ -24,17 +25,17 @@ namespace DomainLayer
             {
                 if (tcpClient.Connected)
                 {
-                    string messageLine = Notification.ClientPayload + payloadAsMessageLine;
+                    string messageLine = NotificationMessage.ClientPayload + payloadAsMessageLine;
                     StreamWriter streamWriter = _streamProvider.CreateStreamWriter(tcpClient.GetStream());
                     streamWriter.WriteLine(messageLine);
                     streamWriter.Flush();
-                    return Notification.MessageSentOk;
+                    return NotificationMessage.MessageSentOk;
                 }
                 return CustomConstants.CRLF + "ERROR. Tcp client Disconnected from server. Message Not sent";
             }
             catch (Exception ex)
             {
-                string log = CustomConstants.CRLF + Notification.Exception + "Problem Sending message to the server..." + CustomConstants.CRLF + ex.ToString();
+                string log = CustomConstants.CRLF + NotificationMessage.Exception + "Problem Sending message to the server..." + CustomConstants.CRLF + ex.ToString();
                 return log;
             }
         }
@@ -58,7 +59,7 @@ namespace DomainLayer
             }
             catch (Exception ex)
             {
-                string log = CustomConstants.CRLF + Notification.Exception + "Problem Receiving message from the server..." + CustomConstants.CRLF + ex.ToString();
+                string log = CustomConstants.CRLF + NotificationMessage.Exception + "Problem Receiving message from the server..." + CustomConstants.CRLF + ex.ToString();
                 messageFromServerCallback(log);
             }
         }

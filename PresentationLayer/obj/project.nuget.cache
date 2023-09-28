@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eIaXQkBHJIzN95zO9Ud0k7c8uJubE6KGwSwhaEQtP+5kBP+qZJJdS2SFQqnPugjJGCmc0tX5XQCEFte2c+H8AA==",
+  "dgSpecHash": "XEcgOusQj1N9cq8DJqrRu3wbe487sgq5zSHRMP9WzOAaQIxqpz840jPidPvEkiWdFcjKyDWvHkcdtcyCGAk1fw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_ChatRoomClient\\17-ChatRoomClientSolution_Test\\PresentationLayer\\PresentationLayer.csproj",
+  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_ChatRoomClient\\19-ChatRoomClientSolution_DemoUpload\\PresentationLayer\\PresentationLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\autofac\\7.1.0\\autofac.7.1.0.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\expression.blend.sdk\\1.0.2\\expression.blend.sdk.1.0.2.nupkg.sha512",

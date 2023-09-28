@@ -104,3 +104,9 @@ C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-Chat
 C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-ChatRoomClientSolution_Test\UnitTestChatRoomClient\bin\Debug\net7.0-windows\ServiceLayer.pdb
 C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-ChatRoomClientSolution_Test\UnitTestChatRoomClient\bin\Debug\net7.0-windows\DomainLayer.dll
 C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-ChatRoomClientSolution_Test\UnitTestChatRoomClient\bin\Debug\net7.0-windows\DomainLayer.pdb
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\UnitTestChatRoomClient\bin\Debug\net7.0-windows\CoverletSourceRootsMapping
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\UnitTestChatRoomClient\obj\Debug\net7.0-windows\UnitTestChatRoomClient.csproj.AssemblyReference.cache
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\UnitTestChatRoomClient\obj\Debug\net7.0-windows\UnitTestChatRoomClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\UnitTestChatRoomClient\obj\Debug\net7.0-windows\UnitTestChatRoomClient.AssemblyInfoInputs.cache
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\UnitTestChatRoomClient\obj\Debug\net7.0-windows\UnitTestChatRoomClient.AssemblyInfo.cs
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\UnitTestChatRoomClient\obj\Debug\net7.0-windows\UnitTestChatRoomClient.csproj.CoreCompileInputs.cache

@@ -3,6 +3,7 @@ using DomainLayer.Utils.Interfaces;
 using ServiceLayer;
 using ServiceLayer.Enumerations;
 using ServiceLayer.Interfaces;
+using ServiceLayer.Messages;
 using ServiceLayer.Models;
 using UnitTestChatRoomClient.MockingClasses;
 using static ServiceLayer.DelegateTypes.CustomDelegate;
@@ -30,7 +31,7 @@ namespace UnitTestChatRoomClient.DomainLayerTest
             void ClientLogReportCallback(string report)
             {
                 //Assert
-                Assert.Equal(Notification.MessageSentOk, report);
+                Assert.Equal(NotificationMessage.MessageSentOk, report);
             }
 
             void ClientConnectionReportCallback(bool isConnecte)

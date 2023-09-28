@@ -174,3 +174,14 @@ C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-Chat
 C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-ChatRoomClientSolution_Test\ServiceLayer\obj\Debug\net7.0-windows\refint\ServiceLayer.dll
 C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-ChatRoomClientSolution_Test\ServiceLayer\obj\Debug\net7.0-windows\ServiceLayer.pdb
 C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\17-ChatRoomClientSolution_Test\ServiceLayer\obj\Debug\net7.0-windows\ref\ServiceLayer.dll
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\bin\Debug\net7.0-windows\ServiceLayer.deps.json
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\bin\Debug\net7.0-windows\ServiceLayer.dll
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\bin\Debug\net7.0-windows\ServiceLayer.pdb
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\obj\Debug\net7.0-windows\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\obj\Debug\net7.0-windows\ServiceLayer.AssemblyInfoInputs.cache
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\obj\Debug\net7.0-windows\ServiceLayer.AssemblyInfo.cs
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\obj\Debug\net7.0-windows\ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\obj\Debug\net7.0-windows\ServiceLayer.dll
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\obj\Debug\net7.0-windows\refint\ServiceLayer.dll
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\obj\Debug\net7.0-windows\ServiceLayer.pdb
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_ChatRoomClient\19-ChatRoomClientSolution_DemoUpload\ServiceLayer\obj\Debug\net7.0-windows\ref\ServiceLayer.dll

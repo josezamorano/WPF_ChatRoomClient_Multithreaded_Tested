@@ -1,8 +1,8 @@
 ﻿using DomainLayer.Utils.Interfaces;
-using ServiceLayer;
 using ServiceLayer.Constants;
 using ServiceLayer.Enumerations;
 using ServiceLayer.Interfaces;
+using ServiceLayer.Messages;
 using ServiceLayer.Models;
 using System;
 using System.Collections.Generic;
@@ -86,7 +86,7 @@ namespace DomainLayer
         {
             _ClientIsActive = false;
             serverCommunicationInfo.ConnectionReportCallback(_ClientIsActive);
-            clientLog = CustomConstants.CRLF + Notification.Exception + "Problem connecting to server... " + CustomConstants.CRLF + ex.ToString();
+            clientLog = CustomConstants.CRLF + NotificationMessage.Exception + "Problem connecting to server... " + CustomConstants.CRLF + ex.ToString();
             serverCommunicationInfo.LogReportCallback(clientLog);
             serverCommunicationInfo.ConnectionReportCallback(false);
         }

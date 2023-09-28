@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "koOxF1LeXlydBZQGbuhJkmYMlEPXTQ4G0wUPYXHFW2eaEkxf9x6QLaa3s8Bv180GNRriuQSYepIJdQUpE0TQnw==",
+  "dgSpecHash": "YsGVytvr2KgAdAmSuy4QqvyhB0BDEaWF3PxaNFbU4iWBfMgidoHjMJ3HLeCoUuuUHEPRiIyU1+CAnPxsutOpnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_ChatRoomClient\\17-ChatRoomClientSolution_Test\\UnitTestChatRoomClient\\UnitTestChatRoomClient.csproj",
+  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_ChatRoomClient\\19-ChatRoomClientSolution_DemoUpload\\UnitTestChatRoomClient\\UnitTestChatRoomClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Windows\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

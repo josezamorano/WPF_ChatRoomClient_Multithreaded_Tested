@@ -1,6 +1,7 @@
 ﻿using DomainLayer.Utils.Interfaces;
 using ServiceLayer;
 using ServiceLayer.DelegateTypes;
+using ServiceLayer.Messages;
 using ServiceLayer.Models;
 using System.Net.Sockets;
 
@@ -10,7 +11,7 @@ namespace UnitTestChatRoomClient.MockingClasses
     {
         public void ExecuteCommunicationSendMessageToServer(Payload payload, ServerCommunicationInfo serverCommunicationInfo)
         {
-            var info = Notification.MessageSentOk;
+            var info = NotificationMessage.MessageSentOk;
             serverCommunicationInfo.LogReportCallback(info);
         }
 

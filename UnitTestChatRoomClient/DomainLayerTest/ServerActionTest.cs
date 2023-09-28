@@ -4,6 +4,7 @@ using DomainLayer.Utils.Interfaces;
 using Moq;
 using ServiceLayer;
 using ServiceLayer.Enumerations;
+using ServiceLayer.Messages;
 using ServiceLayer.Models;
 using System.Net.Sockets;
 using UnitTestChatRoomClient.MockingClasses;
@@ -35,7 +36,7 @@ namespace UnitTestChatRoomClient.DomainLayerTest
                 var info = "";
                 info = info + report;
 
-                var exception = Notification.Exception;
+                var exception = NotificationMessage.Exception;
                 //Assert
                 Assert.DoesNotContain(exception, info);
             }

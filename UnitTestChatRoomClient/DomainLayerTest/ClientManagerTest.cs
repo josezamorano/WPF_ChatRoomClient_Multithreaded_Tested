@@ -5,6 +5,7 @@ using ServiceLayer;
 using ServiceLayer.Constants;
 using ServiceLayer.Enumerations;
 using ServiceLayer.Interfaces;
+using ServiceLayer.Messages;
 using ServiceLayer.Models;
 using UnitTestChatRoomClient.MockingClasses;
 using static ServiceLayer.DelegateTypes.CustomDelegate;
@@ -63,7 +64,7 @@ namespace UnitTestChatRoomClient.DomainLayerTest
                 var info = "";                    
                    info = info + report;
 
-                var exception = Notification.Exception;
+                var exception = NotificationMessage.Exception;
 
                 //Assert
                 Assert.DoesNotContain(exception, info);
@@ -147,7 +148,7 @@ namespace UnitTestChatRoomClient.DomainLayerTest
                 var info = "";
                 info = info + report;
 
-                var exception = Notification.Exception;
+                var exception = NotificationMessage.Exception;
                 //Assert
                 if(counter == 0){ Assert.DoesNotContain(exception, info); }
                 if(counter == 1){ Assert.Contains(exception, info); }               
@@ -176,7 +177,7 @@ namespace UnitTestChatRoomClient.DomainLayerTest
                 var info = "";
                 info = info + report;
 
-                var exception = Notification.Exception;
+                var exception = NotificationMessage.Exception;
                 ////Assert
                 Assert.DoesNotContain(exception, info);
             }
@@ -201,7 +202,7 @@ namespace UnitTestChatRoomClient.DomainLayerTest
                 var info = "";
                 info = info + report;
 
-                var exception = Notification.Exception;
+                var exception = NotificationMessage.Exception;
                 //Assert
                 Assert.DoesNotContain(exception, info);
 

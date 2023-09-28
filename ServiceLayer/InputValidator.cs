@@ -1,4 +1,5 @@
 ﻿using ServiceLayer.Interfaces;
+using ServiceLayer.Messages;
 using ServiceLayer.Models;
 using System;
 using System.Net;
@@ -51,7 +52,7 @@ namespace ServiceLayer
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrWhiteSpace(username))
             {
-                return Notification.UsernameWarningInsert;
+                return NotificationMessage.UsernameWarningInsert;
             }
             return string.Empty;
         }
@@ -61,7 +62,7 @@ namespace ServiceLayer
 
             if (string.IsNullOrEmpty(ipAddress) || string.IsNullOrWhiteSpace(ipAddress))
             {
-                return Notification.IPAddressWarningInsert;
+                return NotificationMessage.IPAddressWarningInsert;
             }
 
             var messageIPV4 = ResolveIPV4Address(ipAddress);
@@ -75,7 +76,7 @@ namespace ServiceLayer
             var isValid = IPAddress.TryParse(ipAddress, out defaultValue);
             if (!isValid)
             {
-                return Notification.IPAddressWarningInsert;
+                return NotificationMessage.IPAddressWarningInsert;
             }
             return string.Empty;
         }
@@ -85,7 +86,7 @@ namespace ServiceLayer
             string[] octets = ipAddress.Split('.');
             if (octets.Length != 4)
             {
-                return Notification.IPAddressWarningInsert;
+                return NotificationMessage.IPAddressWarningInsert;
             }
 
             foreach (var octet in octets)
@@ -94,7 +95,7 @@ namespace ServiceLayer
                 bool isValidOcted = Int32.TryParse(octet, out defaultVal);
                 if (!isValidOcted || defaultVal < 0 || defaultVal > 255)
                 {
-                    return Notification.IPAddressWarningInsert;
+                    return NotificationMessage.IPAddressWarningInsert;
                 }
             }
             return string.Empty;
@@ -105,14 +106,14 @@ namespace ServiceLayer
             string[] octets = ipAddress.Split(':');
             if (octets.Length != 8)
             {
-                return Notification.IPAddressWarningInsert;
+                return NotificationMessage.IPAddressWarningInsert;
             }
 
             foreach (string octet in octets)
             {
                 if (octet.Length != 4)
                 {
-                    return Notification.IPAddressWarningInsert;
+                    return NotificationMessage.IPAddressWarningInsert;
                 }
             }
 
@@ -128,7 +129,7 @@ namespace ServiceLayer
                 return string.Empty;
             }
 
-            return Notification.PortWarningInsert;
+            return NotificationMessage.PortWarningInsert;
         }
 
 
@@ -136,7 +137,7 @@ namespace ServiceLayer
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrWhiteSpace(username))
             {
-                return Notification.ChatRoomWarning;
+                return NotificationMessage.ChatRoomWarning;
             }
             return string.Empty;
         }
@@ -146,7 +147,7 @@ namespace ServiceLayer
         {
             if (selectedCount == 0)
             {
-                return Notification.GuestNotSelectedVarning;
+                return NotificationMessage.GuestNotSelectedVarning;
             }
             return string.Empty;
         }

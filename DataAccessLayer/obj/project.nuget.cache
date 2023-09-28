@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qF+0V7SBniLXQxWMDxEgfmDAoUXkihA2YS7QNq9n0HvBBD5J+S6t5GDfqgV3lGVFJefQKBeFiqSeY8hoPYVIIQ==",
+  "dgSpecHash": "d4xslEWp1jnUzfk1DKI2PpumJCiu8CdV3L3aNBuC35FP8y+Qb06cq7SMtR7zqJCi+3wO9MNE0Zni48gntFIxxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_ChatRoomClient\\17-ChatRoomClientSolution_Test\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_ChatRoomClient\\19-ChatRoomClientSolution_DemoUpload\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Windows\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
