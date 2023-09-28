@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\computers-64.png" />
+    <None Remove="Icons\connect_black.png" />
+    <None Remove="Icons\connect_transparent.png" />
+    <None Remove="Icons\connect_white.png" />
+    <None Remove="Icons\disconnect_black.png" />
+    <None Remove="Icons\disconnect_transparent.png" />
+    <None Remove="Icons\disconnect_white.png" />
+    <None Remove="Icons\icons8-connected-100.png" />
+    <None Remove="Icons\icons8-disconnect-80.png" />
+    <None Remove="Icons\placeholder.gif" />
+    <None Remove="Icons\plug.png" />
+    <None Remove="Icons\plug1.png" />
+    <None Remove="Icons\plugged23.png" />
+    <None Remove="Icons\unplugged11.png" />
+    <None Remove="Icons\user.png" />
+    <None Remove="Icons\user1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.1.0" />
+    <PackageReference Include="Expression.Blend.Sdk" Version="1.0.2" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+    <ProjectReference Include="..\DomainLayer\DomainLayer.csproj" />
+    <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\user.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\user1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

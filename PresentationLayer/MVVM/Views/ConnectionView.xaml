@@ -1,0 +1,161 @@
+﻿<UserControl x:Class="PresentationLayer.MVVM.Views.ConnectionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PresentationLayer.MVVM.Views"
+             xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:cuc="clr-namespace:PresentationLayer.CustomUserControls"
+             mc:Ignorable="d" >
+    
+    <Grid x:Name="GridConnection"
+          VerticalAlignment="Center"
+          HorizontalAlignment="Stretch"
+          Background="Transparent"
+          Margin="5"
+          Visibility="{Binding GridConnectionVisibility}"
+          >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Border BorderBrush="red" BorderThickness="0"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+        >      
+        <cuc:HeaderMenuBar x:Name="HeaderMenuBarControl"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            FontSize="16"
+            HeaderMenuBarButtonGoBackCommand="{Binding ButtonConnectionGoBackCommand}"
+            HeaderMenuBarTitle="Connection Status: "
+            HeaderMenuBarTitleColor="{Binding ConnectionTitleColor , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+            HeaderMenuBarDescription="{Binding ConnectionStatus}"
+            HeaderMenuBarDescriptionColor="{Binding ConnectionStatusColor , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+        />
+        </Border>
+
+        <StackPanel x:Name="StackPanelConnectionView"
+                    Grid.Row="1"
+                    Grid.Column="1"                   
+                    Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"                    
+                    >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="LabelUsernameStatus"                
+                           Text="Username Status: "
+                           Style="{StaticResource standardTextBlock}"
+                />
+
+                <TextBlock x:Name="TextBlockUsernameStatusInfo" 
+                           Style="{StaticResource standardTextBlock}"
+                           Text="{Binding TextBlockUsernameStatus}"
+                           Foreground="{Binding TextBlockUsernameStatusColor}"
+                 />
+            </StackPanel>
+            
+            
+            <TextBlock x:Name="LabelUsername"                
+                       Text="Create Username"
+                       Style="{StaticResource standardTextBlock}"
+                       />
+
+            <TextBlock x:Name="LabelUsernameWarning"                
+                       Text="{Binding TextBlockUsernameWarning , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"                      
+                       Style="{StaticResource standardTextBlockWarning}"
+                       />
+            
+            <TextBox Text="{Binding TextBoxUsername, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Style="{StaticResource inputTextBox}"
+                     IsReadOnly="{Binding TextBoxUsernameIsReadOnly}"
+                     />
+
+            <Button x:Name="ButtonRetryUsername"
+                    Grid.Column="1"
+                    Style="{StaticResource actionButton }"
+                    Margin="10"
+                    Command="{Binding ButtonRetryUsernameCommand}"
+                    IsEnabled="{Binding ButtonRetryUsernameIsEnabled , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    Visibility="{Binding ButtonRetryUsernameVisibility, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            >
+                <TextBlock Text="Retry"/>
+            </Button>
+
+            <TextBlock Text="Server IP Address"
+                        Style="{StaticResource standardTextBlock}"
+                       />
+            
+            <TextBlock x:Name="LabelServerIPAddressWarning"                
+                       Text="{Binding TextBlockServerIPAddressWarning, Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}"                      
+                       Style="{StaticResource standardTextBlockWarning}"
+            />
+            <TextBox Text="{Binding TextBoxServerIPAddress , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Style="{StaticResource inputTextBox}"
+                     IsReadOnly="{Binding TextBoxServerIPAddressIsReadOnly}"
+                     
+            />
+
+            <TextBlock Text="Port"
+                       Style="{StaticResource standardTextBlock}"
+                       />
+            <TextBlock x:Name="LabelPorWarning"                
+                      Text="{Binding TextBlockPortWarning, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"                      
+                      Style="{StaticResource standardTextBlockWarning}"
+            />
+            <TextBox Text="{Binding TextBoxPort , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Style="{StaticResource inputTextBox}"
+                     IsReadOnly="{Binding TextBoxPortIsReadOnly}"
+                    />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="ButtonConnectToServer"
+                        Grid.Column="0"    
+                        Style="{StaticResource actionButton }"
+                        HorizontalAlignment="Right"
+                        Margin="10"
+                        Command="{Binding ButtonConnectToServerCommand}"
+                        IsEnabled="{Binding  ButtonConnectIsEnabled}"
+                        >
+                    <TextBlock Text="Connect"/>
+                </Button>
+                <Button x:Name="ButtonDisconnectFromServer"
+                        Grid.Column="1"
+                        Style="{StaticResource actionButton }"
+                        Margin="10"
+                        Command="{Binding ButtonDisconnectFromServerCommand}"
+                        IsEnabled="{Binding ButtonDisconnectIsEnabled}"
+                        >
+                    <TextBlock Text="Disconnect"/>
+                </Button>
+            </Grid>
+
+            <TextBlock Text="Connection Log"
+                       Style="{StaticResource standardTextBlock}"
+                       Margin="0,0,0,10"
+             />
+            <TextBox x:Name="TextBoxClientLog"
+                     Text="{Binding TextBoxClientConnectionLog}"
+                     Style="{StaticResource readonlyTextBox}"
+                     Height="150"
+                     MaxHeight="250"/>
+
+
+        </StackPanel>
+    </Grid>
+
+
+</UserControl>

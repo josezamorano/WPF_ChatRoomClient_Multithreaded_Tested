@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="PresentationLayer.MVVM.Views.InvitationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PresentationLayer.MVVM.Views"
+             xmlns:cuc="clr-namespace:PresentationLayer.CustomUserControls"
+             mc:Ignorable="d" >
+
+
+    <Grid x:Name="GridInvitation"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Stretch"
+            Background="Transparent"
+            Margin="5"
+            Visibility="{Binding GridInvitationVisibility}"
+       >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <cuc:HeaderMenuBar x:Name="HeaderMenuBarControl"
+             Grid.Row="0"
+             Grid.Column="0"
+             Grid.ColumnSpan="3"
+             FontSize="16"
+             HeaderMenuBarButtonGoBackCommand="{Binding ButtonInvitationGoBackCommand}"
+             HeaderMenuBarTitle="Invites Pending Response: "
+             HeaderMenuBarTitleColor="{Binding InvitationTitleColor}"
+             HeaderMenuBarDescription="{Binding InvitationsPendingCount , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+             HeaderMenuBarDescriptionColor="{Binding InvitationsPendingCountColor , Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+         />
+
+        <cuc:AllInvitesListView
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            ListViewItemsSource="{Binding AllInvites}"
+            ListViewSelectedItem="{Binding SelectedInvite}"
+            ListViewButtonAcceptCommand="{Binding ButtonClickedAcceptCommand}"
+            ListViewButtonRejectCommand="{Binding ButtonClickedRejectCommand}"
+            />
+
+    </Grid>
+
+
+</UserControl>
